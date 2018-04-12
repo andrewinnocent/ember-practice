@@ -50,7 +50,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/ember-practice>'
+    ENV.rootURL = '/ember-practice'
     ENV.locationType = 'hash'
     ENV.apiHost = 'https://ember-practice-api.herokuapp.com'
   }
