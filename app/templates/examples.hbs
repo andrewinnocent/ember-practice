@@ -1,8 +1,8 @@
 <h2>Examples</h2>
 
+<ul>
+{{#each model as |example|}}
+  <li>{{#link-to 'example' example}} {{example.text}} {{/link-to}}</li>
+{{/each}}
+</ul>
 {{example-entry newExample='createExample'}}
-{{!-- <ul>
-  {{#each model as |example|}}
-    <li></li>
-  {{/each}}
-</ul> --}}

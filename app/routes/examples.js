@@ -8,7 +8,7 @@ export default Route.extend({
   toast: service(),
 
   model () {
-    return RSVP.Promise.resolve({})
+    return this.get('store').findAll('example')
   },
 
   actions: {
