@@ -1,4 +1,4 @@
-<h2>{{model.text}}</h2>
+<h2><span>{{model.text}}</span><span {{action 'deleteExample' model}}>{{fa-icon 'trash-o'}}</span></h2>
 
 {{example-edit example=model              editExample='updateExample'}}
 

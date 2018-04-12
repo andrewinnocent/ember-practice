@@ -8,6 +8,10 @@ export default Route.extend({
   actions: {
     updateExample (text) {
       text.save()
+    },
+    deleteExample (text) {
+      text.destroyRecord()
+        .then(() => this.transitionTo('examples'))
     }
   }
 })
