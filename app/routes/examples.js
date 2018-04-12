@@ -15,7 +15,7 @@ export default Route.extend({
       const example = this.get('store').createRecord('example', examplePojo)
       const notifications = this.get('toast')
       notifications.success('A new example was created!', 'New Example')
-      return example.save()
+      example.save()
     }
   }
 })

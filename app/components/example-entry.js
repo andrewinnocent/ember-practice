@@ -6,8 +6,8 @@ export default Component.extend({
   },
   actions: {
     newExample (text) {
-      console.log('text is', text)
       this.sendAction('newExample', this.get('example'))
+      this.set('example.text', '')
     }
   }
 })
